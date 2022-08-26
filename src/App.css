@@ -1,38 +1,124 @@
-.App {
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  text-align: center;
+  background-color: #ef0e3d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 40%;
+  height: auto;
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.line {
+  height: 12px;
+  background-color: #383838;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle.outer {
+  width: 50px;
+  height: 50px;
+  border: 8px solid #383838;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle.inner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #383838;
+  border-radius: 50%;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+}
+
+.counter p {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1vw;
+	border-radius: 4rem;
+	padding: 0 1em;
+	width: 12vw;
+	height: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.counter p:first-child {
+  background-color: #b5ffb5;
+  border: 1px solid #b5ffb5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter p:last-child {
+  background-color: #ffb5b5;
+  border: 1px solid #ffb5b5;
+}
+
+.cardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 4rem 1rem;
+}
+
+.card {
+  height: 20vh;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  height: 65%;
+}
+
+.modal {
+  width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #ffffff;
+}
+
+.modal button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw;
+	border-radius: 4rem;
+	padding: 0 1em;
+	width: 12vw;
+	height: 2rem;
+  font-size: 14px;
+  background-color: #e1e2ec;
+  border: 1px solid #e1e2ec;
+  cursor: pointer;
 }
